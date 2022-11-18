@@ -9,10 +9,8 @@ void main()
     printf("Enter the size of array:\n");
     scanf("%d",&n);
     printf("Enter elements of array:\n");
-    {
-        scanf("%d",&a[i]);
-        
-    }
+    for(i=0;i<n;i++)
+    { scanf("%d",&a[i]);}
     printf("Enter which position array to be inserted:\n");
     scanf("%d",&position);
     printf("Enter element:\n");
