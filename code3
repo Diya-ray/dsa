@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+void main()
+{
+    
+    int n,i,value;
+    int a[50];
+    printf("Enter the size of array:\n");
+    scanf("%d",&n);
+    printf("Enter elements of array:\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        }
+    printf("ELement to be searched:\n");
+    scanf("%d",&value);
+   for(i=0;i<=n;i++)
+    {
+      if(a[i]=value)
+     printf("The position is %d",i+1);
+    
+}
