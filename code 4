@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void main() {
+    int a[50],n,i;
+    printf("How many numbers u wish to enter");
+    scanf("%d",&n);
+    printf("Enter the numbers:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]); }
+    for(i=1;i<n;i++)
+    {
+        if(a[0]<a[i])
+        a[0]=a[i];
+    }
+    printf("Largest no is %d",a[0]);
+    }
