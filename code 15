@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{ int info;
+struct node* link;
+};
+struct node* first;
+void main()
+{
+ struct node* ptr;
+ ptr=first;
+ first=ptr->link;
+ free(ptr);
+}
