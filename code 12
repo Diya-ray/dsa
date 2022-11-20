@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int i,n,a[100],key;
+    printf("Enter the no. of element:");
+    scanf("%d,&n");
+    printf("Enter the elment:\n");
+    for(i=0;i<n;i++)
+    {scanf("%d",&a[i]);}
+    printf("Enter the eleme nt tobe searched:\n");
+    scanf("%d",&key);
+    int res=linear_search(a,n,key)
+    if(res==-1)
+    printf("Element not found");
+    else
+    printf("element %d found at %d position",key,res+1);
+}
+int linear_search(int a[],int n,int key)
+{
+    int i;
+    for(i=0;i<=n;i++)
+    {if(a[i]==key)
+    return i;
+    else 
+    return -1;
+    }
+}
