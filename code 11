@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+     int low,high,mid,arr[100],n,key;
+    low=0;
+    printf("Enter the no.of element");
+    scanf("%d",&n);
+    printf("elements are");
+    for(int i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+    high=n-1;
+    mid=(low+high)/2;
+    printf("Elment to be searched:\n");
+    scanf("%d",&key);
+    while(low<=high)
+    {
+        if (arr[mid]<key)
+        low=mid+1;
+        if(arr[mid]>key)
+        high=mid-1;
+        if(arr[mid]==key)
+        printf("%dfound at %d index",key,mid);
+        if(low>high)
+        printf("Search unsuccessful");
+    }
+}
